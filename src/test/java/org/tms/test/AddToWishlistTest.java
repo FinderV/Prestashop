@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.tms.page.ProductPage;
 import org.tms.service.ProductPageService;
+import org.tms.utils.Constants;
 
 public class AddToWishlistTest extends BaseTest{
 
@@ -19,6 +20,8 @@ public class AddToWishlistTest extends BaseTest{
             productPageService = new  ProductPageService();
         }
 
+        protected Constants constants = new Constants();
+
         @Test(description = "Add to wishlist http://prestashop.qatestlab.com.ua/en/tshirts/1-faded-short-sleeve-tshirts.html")
         @Description("Add to wishlist http://prestashop.qatestlab.com.ua/en/tshirts/1-faded-short-sleeve-tshirts.html")
         @Link("https://github.com/FinderV")
@@ -27,7 +30,7 @@ public class AddToWishlistTest extends BaseTest{
         public void addToWishlistTest() {
             ProductPage productPage = productPageService.addToWishlist();
             String actualQuantityOfItemWishlist = productPage.getQuantityOfItemWishlist();
-            String expectedQuantityOfItemWishlist = "1";
+            String expectedQuantityOfItemWishlist = constants.ONE;
             Assert.assertEquals(actualQuantityOfItemWishlist, expectedQuantityOfItemWishlist, "The actual quantity of the item added to the wishlist does not match expected!");
     }
 }

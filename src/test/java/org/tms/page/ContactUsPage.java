@@ -1,11 +1,8 @@
 package org.tms.page;
 
 import io.qameta.allure.Step;
-import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-@Log4j2
 
 public class ContactUsPage extends Page{
 

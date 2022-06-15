@@ -2,12 +2,10 @@ package org.tms.page;
 
 import java.util.List;
 
-import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.tms.utils.Waiter;
 
-@Log4j2
 
 public class InventoryPage extends Page {
 

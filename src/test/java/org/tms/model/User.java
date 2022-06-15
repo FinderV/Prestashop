@@ -2,10 +2,10 @@ package org.tms.model;
 
 public class User {
 
-  private String emailAddressCreate = "5622@mail.ru";      // new create 1
-  private String emailAddressCreateNew = "5623@mail.ru";             // new
-  private String emailAddress = "5620@mail.ru";          // old next 1
-  private String emailAddressWishlist = "5620@mail.ru";        //  old next  add wishlist 1
+  private String emailAddressCreate = "5701@mail.ru";      // new create 1
+  private String emailAddressCreateNew = "5702@mail.ru";             // new
+  private String emailAddress = "5700@mail.ru";          // old next 1
+  private String emailAddressWishlist = "5700@mail.ru";        //  old next  add wishlist 1
   private String existingEmailAddress = "12@mail.com";
   private String password = "Y4xE27s3dSFSuCQ";
   private String wrongPassword = "123Y4xE27s3dSFSuCQ";

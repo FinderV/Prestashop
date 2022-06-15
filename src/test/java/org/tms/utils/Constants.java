@@ -13,5 +13,7 @@ public class Constants {
 
     //ExpectedText
     public static String invalid_contact_us = "Please select a subject from the list provided.";
+   // public static String EMPTY = "";
+    public static String ONE = "1";
 
 }
