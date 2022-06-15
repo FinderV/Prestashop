@@ -30,5 +30,4 @@ public class AddToWishlistTest extends BaseTest{
             String expectedQuantityOfItemWishlist = "1";
             Assert.assertEquals(actualQuantityOfItemWishlist, expectedQuantityOfItemWishlist, "The actual quantity of the item added to the wishlist does not match expected!");
     }
-
 }

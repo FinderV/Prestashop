@@ -2,57 +2,57 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Smoke" parallel="tests" thread-count="2">
-   <test name="Login Page Test Failed">
+   <test name="Login page failed test">
     <classes>
       <class name="org.tms.test.LoginPageFailedTest"/>
     </classes>
   </test>
-  <test name="Login Page Without Password">
+  <test name="Login page without password test">
     <classes>
       <class name="org.tms.test.PasswordIsRequiredTest"/>
     </classes>
   </test>
-  <test name="Add To Cart">
+  <test name="Login with wrong password test">
     <classes>
       <class name="org.tms.test.LoginPageFailedTest"/>
     </classes>
   </test>
-  <test name="Logout Page Test">
+  <test name="Logout test">
     <classes>
       <class name="org.tms.test.LogoutPageTest"/>
     </classes>
   </test>
-  <test name="Add product to cart Test">
+  <test name="Add product to cart test">
     <classes>
       <class name="org.tms.test.AddToCartTest"/>
     </classes>
   </test>
-  <test name="Remove product from cart Test">
+  <test name="Remove product from cart test">
     <classes>
       <class name="org.tms.test.RemoveFromCartTest"/>
     </classes>
   </test>
-  <test name="Contact us Message Test">
+  <test name="Contact us Message test">
     <classes>
       <class name="org.tms.test.ContactUsTest"/>
     </classes>
   </test>
-  <test name="Create An Account Test">
+  <test name="Create an Account test">
     <classes>
       <class name="org.tms.test.CreateAnAccountTest"/>
     </classes>
   </test>
-  <test name="Create An Account Under An Existing User Test">
+  <test name="Create an account under an existing user test">
     <classes>
       <class name="org.tms.test.CreateAnAccountUnderAnExistingUserTest"/>
     </classes>
   </test>
-  <test name="create An Account Control Required Fields Test">
+  <test name="create an account control required fields test">
     <classes>
       <class name="org.tms.test.CreateAnAccountControlRequiredFieldsTest"/>
     </classes>
   </test>
-  <test name="Add to wishlist Test">
+  <test name="Add to wishlist test">
     <classes>
       <class name="org.tms.test.AddToWishlistTest"/>
     </classes>

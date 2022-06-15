@@ -30,5 +30,4 @@ public class PasswordIsRequiredTest extends BaseTest {
         String expectedNameOfAuthenticationWithoutPassword = "Password is required.";
         Assert.assertEquals(actualNameOfAuthenticationWithoutPassword, expectedNameOfAuthenticationWithoutPassword, "The actual text of the page does not match expected!");
     }
-
 }

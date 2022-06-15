@@ -133,5 +133,4 @@ public class LoginPage extends Page {
     password.sendKeys(keyPassword);
     return this;
   }
-
 }

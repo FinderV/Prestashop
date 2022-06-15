@@ -31,4 +31,3 @@ public class CreateAnAccountUnderAnExistingUserTest extends BaseTest {
         Assert.assertEquals(actualTextOfCreateAnAccountUnderAnExistingUser, expectedTextOfCreateAnAccountUnderAnExistingUser, "Your account not has been created!");
     }
 }
-

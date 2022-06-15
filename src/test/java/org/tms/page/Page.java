@@ -24,5 +24,4 @@ public abstract class Page {
   protected WebElement waitElementToBeClickable(WebElement element) {
     return new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS)).until(ExpectedConditions.elementToBeClickable(element));
   }
-
 }
