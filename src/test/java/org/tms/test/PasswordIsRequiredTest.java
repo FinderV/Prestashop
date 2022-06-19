@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.tms.page.InventoryPage;
 import org.tms.service.LoginPageService;
+import org.tms.utils.Retry;
 
 public class PasswordIsRequiredTest extends BaseTest {
 
@@ -19,7 +20,7 @@ public class PasswordIsRequiredTest extends BaseTest {
         loginPageService = new LoginPageService();
     }
 
-    @Test(description = "Login without password http://prestashop.qatestlab.com.ua/en/authentication?back=my-account/")
+    @Test(retryAnalyzer = Retry.class, description = "Login without password http://prestashop.qatestlab.com.ua/en/authentication?back=my-account/")
     @Description("Login without password http://prestashop.qatestlab.com.ua/en/authentication?back=my-account/")
     @Link("https://github.com/FinderV")
     @Issue("FinderV")
@@ -27,7 +28,7 @@ public class PasswordIsRequiredTest extends BaseTest {
     public void loginWithoutPasswordTest() {
         InventoryPage inventoryPage = loginPageService.loginWithoutPassword();
         String actualNameOfAuthenticationWithoutPassword = inventoryPage.getNameOfAuthenticationWithoutPassword();
-        String expectedNameOfAuthenticationWithoutPassword = "Password is required.";
+        String expectedNameOfAuthenticationWithoutPassword = "Password1 is required.";
         Assert.assertEquals(actualNameOfAuthenticationWithoutPassword, expectedNameOfAuthenticationWithoutPassword, "The actual text of the page does not match expected!");
     }
 }

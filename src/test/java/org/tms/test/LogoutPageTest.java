@@ -4,12 +4,14 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Issue;
 import io.qameta.allure.Link;
 import io.qameta.allure.TmsLink;
+import lombok.extern.log4j.Log4j2;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.tms.page.InventoryPage;
 import org.tms.service.LoginPageService;
 
+@Log4j2
 public class LogoutPageTest extends BaseTest {
 
     private LoginPageService loginPageService;

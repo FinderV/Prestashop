@@ -1,9 +1,14 @@
 package org.tms.utils;
 
 import java.util.concurrent.TimeUnit;
+
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.tms.driver.DriverSingleton;
 
 
 public class TestListener implements ITestListener {
@@ -23,6 +28,7 @@ public class TestListener implements ITestListener {
     public void onTestFailure(ITestResult iTestResult) {
         System.out.println(String.format("======================================== FAILED TEST %s Duration: %ss ========================================", iTestResult.getName(),
                 getExecutionTime(iTestResult)));
+        takeScreenshot();
     }
 
     @Override
@@ -46,6 +52,12 @@ public class TestListener implements ITestListener {
     }
 
     private long getExecutionTime(ITestResult iTestResult) {
-        return TimeUnit.MILLISECONDS.toSeconds(iTestResult.getEndMillis() - iTestResult.getStartMillis());
+        return TimeUnit.MILLISECONDS
+                .toSeconds(iTestResult.getEndMillis() - iTestResult.getStartMillis());
+    }
+    @Attachment(value = "Last screen state", type = "image/png")
+    private byte[] takeScreenshot() {
+        return ((TakesScreenshot) DriverSingleton.getInstance().getDriver())
+                .getScreenshotAs(OutputType.BYTES);
     }
 }
