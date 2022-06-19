@@ -15,7 +15,8 @@ public class PasswordIsRequiredTest extends BaseTest {
 
     private LoginPageService loginPageService;
 
-//    @BeforeClass
+
+    @BeforeClass
 //    public void setUp() {
 //        loginPageService = new LoginPageService();
 //    }
@@ -28,7 +29,7 @@ public class PasswordIsRequiredTest extends BaseTest {
     public void loginWithoutPasswordTest() {
         InventoryPage inventoryPage = loginPageService.loginWithoutPassword();
         String actualNameOfAuthenticationWithoutPassword = inventoryPage.getNameOfAuthenticationWithoutPassword();
-        String expectedNameOfAuthenticationWithoutPassword = "Password1 is required.";
+        String expectedNameOfAuthenticationWithoutPassword = "Password is required.";
         Assert.assertEquals(actualNameOfAuthenticationWithoutPassword, expectedNameOfAuthenticationWithoutPassword, "The actual text of the page does not match expected!");
     }
 }
