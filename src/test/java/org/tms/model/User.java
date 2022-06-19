@@ -5,10 +5,10 @@ import lombok.Data;
 @Data
 public class User {
 
-  private String emailAddressCreate = "5823@mail.ru";      // new create 1
-  private String emailAddressCreateNew = "5824@mail.ru";             // new
-  private String emailAddress = "5822@mail.ru";          // old next 1
-  private String emailAddressWishlist = "5822@mail.ru";        //  old next  add wishlist 1
+  private String emailAddressCreate = "5825@mail.ru";      // new create 1
+  private String emailAddressCreateNew = "5825@mail.ru";             // new
+  private String emailAddress = "5823@mail.ru";          // old next 1
+  private String emailAddressWishlist = "5823@mail.ru";        //  old next  add wishlist 1
   private String existingEmailAddress = "12@mail.com";
   private String password = "Y4xE27s3dSFSuCQ";
   private String wrongPassword = "123Y4xE27s3dSFSuCQ";
