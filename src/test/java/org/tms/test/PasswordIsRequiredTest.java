@@ -15,10 +15,10 @@ public class PasswordIsRequiredTest extends BaseTest {
 
     private LoginPageService loginPageService;
 
-    @BeforeClass
-    public void setUp() {
-        loginPageService = new LoginPageService();
-    }
+//    @BeforeClass
+//    public void setUp() {
+//        loginPageService = new LoginPageService();
+//    }
 
     @Test(retryAnalyzer = Retry.class, description = "Login without password http://prestashop.qatestlab.com.ua/en/authentication?back=my-account/")
     @Description("Login without password http://prestashop.qatestlab.com.ua/en/authentication?back=my-account/")
